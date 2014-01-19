@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFEEEEEE"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/black" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/title_logo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titleBar" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+             >
+
+            <TextView
+                android:id="@+id/textViewText"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/mymsgbg"
+                android:paddingBottom="30dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/white"
+                android:text="您好，请问你们商品什么快递？"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textViewText"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:background="@drawable/replymsgbg"
+                android:paddingBottom="10dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/white"
+                android:text="我们商品一律采用顺丰包邮哦亲！祝您购物愉快"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp" 
+            android:layout_alignParentBottom="true"
+            >
+
+             <Button
+                 android:id="@+id/btn_send"
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentTop="true"
+                 android:paddingBottom="10dp"
+                 android:text="SEND" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/btn_send"
+                android:layout_marginLeft="10dp"
+                 />
+           
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

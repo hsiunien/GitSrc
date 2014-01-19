@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.softa.fscl.ui.widget.TitleBar
+        android:layout_width="match_parent"
+        android:id="@+id/titleBar"
+        android:layout_height="50dp"
+        title="分类" />
+
+    <com.softa.fscl.ui.widget.LoadingScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/sv_commodity"
+         >
+
+        <com.softa.fscl.ui.widget.WatterFullLayout
+            android:id="@+id/listContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/lv0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/lv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" />
+        </com.softa.fscl.ui.widget.WatterFullLayout>
+    </com.softa.fscl.ui.widget.LoadingScrollView>
+
+</LinearLayout>

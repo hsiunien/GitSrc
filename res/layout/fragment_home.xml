@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        >
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/title_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+        
+    </RelativeLayout>     
+    
+    <com.softa.fscl.ui.widget.ImageScroll
+        android:id="@+id/myvp"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" 
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:id="@+id/vb"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="3dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    </LinearLayout>
+    
+  <!--  第一行 -->
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_weight="1"
+        android:layout_marginTop="5dp"
+       >
+        <com.softa.fscl.ui.widget.MenuContainer
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            bgColor="@drawable/selector_home_menu"
+            textColor="@color/white"
+            android:focusable="true"
+            android:clickable="true"
+            android:id="@+id/mcDanpin"
+            icon="@drawable/bag"
+            title="单品" />
+
+       <com.softa.fscl.ui.widget.MenuContainer
+           title="搭配"
+           android:id="@+id/mcDapei"
+           
+           icon="@drawable/dapei"
+           android:layout_marginLeft="5dp"  
+           android:layout_marginRight="10dp"         
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           />
+   </LinearLayout>
+  <!--  第二行 -->
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_weight="1"
+       android:layout_marginBottom="5dp"
+       >
+       <com.softa.fscl.ui.widget.MenuContainer
+           title="期刊"
+           android:id="@+id/mcQikan"
+           icon="@drawable/magzine"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           />
+       <com.softa.fscl.ui.widget.MenuContainer
+           title="最新"
+           android:id="@+id/mcZuixin"
+           icon="@drawable/dress"
+            bgColor="@drawable/selector_home_menu"
+            textColor="@color/white"      
+            android:clickable="true"     
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+           />
+   </LinearLayout>
+   
+</LinearLayout>
